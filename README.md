@@ -1,5 +1,11 @@
 # ggiriDB
 
+### DB 구조
+
+![db](https://user-images.githubusercontent.com/37070273/68071452-cb1f8e80-fdbd-11e9-9ec8-03a2b247daf3.JPG)
+
+### Query
+
 ```
 <CSV TO MYSQL>
 load data local infile '/root/ggiriDB/usersong.csv' into table 사용자노래 character set 'utf8'fields terminated by ',';
@@ -44,5 +50,4 @@ primary key(노래id, 사용자id),
 foreign key(노래id) references 노래(노래id) on update cascade,
 foreign key(사용자id) references 사용자(사용자id) on update cascade)
 default character set utf8;
-
 ```
