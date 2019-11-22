@@ -1,4 +1,4 @@
-# ggiriDB
+﻿# ggiriDB
 
 ### DB 구조
 
@@ -8,6 +8,13 @@
 
 ```
 <CSV TO MYSQL>
+
+load data local infile '/root/ggiriDB/singer3.csv' into table 가수 character set 'utf8'fields terminated by ',';
+
+load data local infile '/root/ggiriDB/song3.csv' into table 노래 character set 'utf8'fields terminated by ',';
+
+load data local infile '/root/ggiriDB/tag3.csv' into table 태그 character set 'utf8'fields terminated by ',';
+
 load data local infile '/root/ggiriDB/usersong.csv' into table 사용자노래 character set 'utf8'fields terminated by ',';
 
 <DB CRREATE QUERY>
